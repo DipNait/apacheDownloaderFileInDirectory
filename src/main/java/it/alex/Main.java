@@ -53,8 +53,8 @@ public class Main {
                 for (Element file : list) {
                     downloadSingle(directoryInbox, delDirectory, urlDirectory, username, password, file.attr("href"));
                 }
-                Thread.sleep(sleepTime);
                 System.out.println("Sleeping : "+ sleepTime);
+                Thread.sleep(sleepTime);
             }catch (Exception e) {
                 e.printStackTrace();
             }
